@@ -10,7 +10,7 @@
       <div class="cards">
 
         <% @cocktails.each do |cocktail| %>
-          <div class="card">
+          <div class="card" style="background: linear-gradient( 200deg, rgba(10,10,30, 0.9), rgba(24,120,55, 0.9));  ; background-image: url(assets/place-holder-cocktail.png);">
             <h3><%= link_to cocktail.name, cocktail %></h3>
             <h4>Ingredients:</h4>
             <% if cocktail.ingredients.blank? %>
