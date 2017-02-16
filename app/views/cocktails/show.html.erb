@@ -6,9 +6,17 @@
 </p>
 
 <p>
-  <strong>Ingredient:</strong>
-  <%= @cocktail.ingredient %>
+  <strong>Ingredients:</strong>
 </p>
 
-<%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
-<%= link_to 'Back', cocktails_path %>
+<% @cocktail.doses.each do |dose| %>
+<%=  raise%>
+  <%= dose.description  %>
+  <%= dose.ingredient.name  %>
+  <% end  %>
+
+<!-- Render ingredients form here: -->
+<%= render 'doses/form', dose: @dose, cocktail: @cocktail %>
+
+
+<%= link_to 'Back', cocktails_path %> |

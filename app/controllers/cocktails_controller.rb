@@ -8,6 +8,7 @@ class CocktailsController < ApplicationController
 
   # GET /cocktails/1
   def show
+    @dose = Dose.new
   end
 
   # GET /cocktails/new
@@ -22,6 +23,7 @@ class CocktailsController < ApplicationController
   # POST /cocktails
   def create
     @cocktail = Cocktail.new(cocktail_params)
+    @cocktail.save
 
     if @cocktail.save
       redirect_to @cocktail, notice: 'Cocktail was successfully created.'
