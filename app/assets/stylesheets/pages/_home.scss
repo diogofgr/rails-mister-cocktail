@@ -2,3 +2,22 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ .card {
+  box-shadow: 1.5px 1.5px 2px black;
+  width: 300px;
+  background: $gray;
+  border-radius: $border-radius-large;
+  padding: 20px;
+  margin: 10px;
+  p, h4 {
+    color: white;
+  }
+ }
+
+
+
