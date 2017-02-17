@@ -4,7 +4,8 @@
 
       <%= simple_form_for(@cocktail) do |f| %>
         <%= f.error_notification %>
-        <%= f.input :name, placeholder: "Chez Miguel" %>
+        <%= f.input :name, placeholder: "Tequilla Sunrise" %>
+        <%= f.input :photo, as: :attachinary %>
         <%= f.submit "Create", class: "btn btn-primary" %>
       <% end %>
 

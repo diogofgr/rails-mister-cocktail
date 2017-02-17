@@ -10,16 +10,22 @@
       <div class="cards">
 
         <% @cocktails.each do |cocktail| %>
-          <div class="card" style="background: linear-gradient( 200deg, rgba(10,10,30, 0.9), rgba(24,120,55, 0.9));  ; background-image: url(assets/place-holder-cocktail.png);">
-            <h3><%= link_to cocktail.name, cocktail %></h3>
-            <h4>Ingredients:</h4>
-            <% if cocktail.ingredients.blank? %>
-              <p>(no ingredients yet)</p>
-            <% else %>
-            <% cocktail.ingredients.each do |ingredient| %>
-                <p><%= ingredient.name.capitalize %></p>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo.path, height: 300, width: 400, crop: :fill %>')">
+            <div class="card-category">Popular</div>
+
+            <div class="card-description">
+              <h3><%= link_to cocktail.name, cocktail %></h3>
+              <h4>Ingredients:</h4>
+              <% if cocktail.ingredients.blank? %>
+                <p>(no ingredients yet)</p>
+              <% else %>
+                <% cocktail.ingredients.each do |ingredient| %>
+                  <p><%= ingredient.name.capitalize %></p>
+                <% end %>
               <% end %>
-            <% end %>
+            </div>
+
+            <a class="card-link" href="#" ></a>
           </div>
         <% end %>
 

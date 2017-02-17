@@ -5,6 +5,10 @@
   <%= @cocktail.name %>
 </p>
 
+<% if @cocktail.photo? %>
+  <%= cl_image_tag @cocktail.photo.path, width: 200, height: 300, crop: :fill %>
+<% end %>
+
 <p>
   <strong>Ingredients:</strong>
 </p>

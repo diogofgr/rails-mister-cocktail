@@ -25,6 +25,11 @@ gem 'coffee-rails', '~> 4.2'
 # Use Figaro for storing keys:
 gem 'figaro'
 
+# Use Cloudinary for storing user-uploads
+gem 'cloudinary', '1.1.0'
+# use Attachinary to upload directly to the server:
+gem "attachinary", github: "assembler/attachinary"
+gem "jquery-fileupload-rails"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
