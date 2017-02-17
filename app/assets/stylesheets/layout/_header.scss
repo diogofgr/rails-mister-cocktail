@@ -1,14 +1,15 @@
-// Your footer style
-.footer {
+.header {
   background-color: black;
-  height: 30px;
-  bottom: 0px;
+  height: 70px;
+  margin-top: 0;
+  position: fixed;
+  top: 0px;
   width: 100%;
   padding-left: 10px;
   z-index: 9999;
+
   * {
     color: white;
-    font-size: 0.7em;
     margin: 0;
   }
 }
