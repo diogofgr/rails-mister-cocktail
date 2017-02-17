@@ -7,9 +7,16 @@
   padding-left: 10px;
   z-index: 9999;
   margin-top: 10px;
+  position: fixed;
   * {
     color: white;
     font-size: 0.7em;
     margin: 0;
   }
 }
+
+// #footer {
+//   margin-top: 0;
+//   position: fixed;
+//   z-index: 9999;
+// }

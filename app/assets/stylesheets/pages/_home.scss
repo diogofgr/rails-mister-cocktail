@@ -2,6 +2,7 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
   .cards {
     margin-top: 90px;
     display: flex;
@@ -60,9 +61,10 @@
   .show-card {
      // border-style: dashed;
     // position: relative;
+    min-height: 200px;
     width: 300px;
     background-size: cover !important;
-    border-radius: $border-radius-small;
+    border-radius: $border-radius-large;
     margin: 10px;
     padding: 10px;
 

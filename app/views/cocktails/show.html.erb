@@ -4,7 +4,6 @@
       <div class="col-xs-12">
         <div class="cards">
             <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo.path, height: 300, width: 300, crop: :fill %>')">
-
             </div>
 
             <div class="show-card">
@@ -17,14 +16,13 @@
               </ul>
               <% end  %>
               <%= render 'doses/form', dose: @dose, cocktail: @cocktail %>
+              <div class="container padded text-right" style="width: 100%">
+                <%= link_to 'Back', cocktails_path, {class: 'btn btn-warning'}%>
+              </div>
             </div>
 
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="wrapper text-center">
-  <%= link_to 'Back', cocktails_path, {class: 'btn btn-warning'}%>
 </div>
