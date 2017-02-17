@@ -17,7 +17,6 @@
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   box-shadow: 1.5px 1.5px 2px rgba(0,0,0,0.6);
-  background-size: cover !important;
   border-radius: $border-radius-small;
   margin: 10px;
   }
@@ -56,6 +55,17 @@
   }
   .card-link:hover{
     opacity: 0.1;
+  }
+
+  .show-card {
+     // border-style: dashed;
+    // position: relative;
+    width: 300px;
+    background-size: cover !important;
+    border-radius: $border-radius-small;
+    margin: 10px;
+    padding: 10px;
+
   }
 
  // .card {

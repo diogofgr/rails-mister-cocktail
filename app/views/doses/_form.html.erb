@@ -1,15 +1,7 @@
-<h1>You're here! put form</h1>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
+<%= simple_form_for [cocktail, dose] do |f| %>
+  <%= f.error_notification %>
+  <%= f.select :ingredient_id, options_from_collection_for_select(Ingredient.all, 'id', 'name', selected: dose.ingredient_id) %>
+  <%= f.input :description, placeholder: "how much?" %>
+  <%= f.submit "Add", class: "btn btn-primary" %>
+<% end %>
 
-      <%= simple_form_for [cocktail, dose] do |f| %>
-        <%= f.error_notification %>
-        <%= f.select :ingredient_id, options_from_collection_for_select(Ingredient.all, 'id', 'name', selected: dose.ingredient_id) %>
-        <%= f.input :description, placeholder: "how much?" %>
-        <%= f.submit "Add", class: "btn btn-primary" %>
-      <% end %>
-
-    </div>
-  </div>
-</div>

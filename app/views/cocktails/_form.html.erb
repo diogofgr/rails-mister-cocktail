@@ -1,14 +1,7 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
 
-      <%= simple_form_for(@cocktail) do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :name, placeholder: "Tequilla Sunrise" %>
-        <%= f.input :photo, as: :attachinary %>
-        <%= f.submit "Create", class: "btn btn-primary" %>
-      <% end %>
-
-    </div>
-  </div>
-</div>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, placeholder: "Tequilla Sunrise" %>
+  <%= f.input :photo, as: :attachinary %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>

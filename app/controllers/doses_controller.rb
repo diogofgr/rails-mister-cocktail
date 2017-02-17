@@ -24,7 +24,7 @@ class DosesController < ApplicationController
     @dose = @cocktail.doses.build(dose_params)
 
     if @dose.save
-      redirect_to cocktails_path, notice: 'Cocktail was successfully created.'
+      redirect_to @cocktail, notice: 'Cocktail was successfully created.'
     else
       render "cocktails/show"
     end
