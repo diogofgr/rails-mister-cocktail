@@ -11,13 +11,13 @@ Cocktail.destroy_all
 all_ingredients = [ "lemon", "orange", "pineapple", "ice", "cinnamon", "rum", "vodka", "gin", "wine", "coke"]
 
 all_ingredients.each do |ingredient|
-  Ingredient.create(name: ingredient)
+  Ingredient.create(name: ingredient.capitalize)
 end
 
-# Seed with one expample cocktail
-  url = "http://placehold.it/400x400"
-(0..5).each do |i|
-  product = Cocktail.new(name: "Cocktail #{i}")
-  product.save!
-  product.photo_url = url # Upload happens here
-end
+# # Seed with one expample cocktail
+#   url = "http://placehold.it/400x400"
+# (0..5).each do |i|
+#   product = Cocktail.new(name: "Cocktail #{i}")
+#   product.save!
+#   product.photo_url = url # Upload happens here
+# end
