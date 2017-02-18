@@ -1,6 +1,6 @@
 .header {
   background-color: black;
-  height: 70px;
+  // height: 70px;
   margin-top: 0;
   position: fixed;
   top: 0px;
@@ -15,5 +15,11 @@
 
   h1 {
     font-family: 'Georgia', serif;
+    font-size: 2.2em;
+    // line-height: 100%;
+    :hover{
+      color: white;
+      text-decoration: none;
+    }
   }
 }
