@@ -23,22 +23,22 @@ urls = [
   "gin-titanic_w5uzqm.jpg"
 ]
 cocktail_1 = Cocktail.new(name: "Mojito")
-cocktail_1.save!
 cocktail_1.photo_url = "http://res.cloudinary.com/dpfv7sbu4/image/upload/v1487341784/#{urls[0]}"
+cocktail_1.save!
 
 cocktail_2 = Cocktail.new(name: "Tequilla Sunrise")
-cocktail_2.save!
 cocktail_2.photo_url = "http://res.cloudinary.com/dpfv7sbu4/image/upload/v1487341784/#{urls[1]}"
+cocktail_2.save!
 
 cocktail_3 = Cocktail.new(name: "San Francisco")
-cocktail_3.save!
 cocktail_3.photo_url = "http://res.cloudinary.com/dpfv7sbu4/image/upload/v1487341784/#{urls[2]}"
+cocktail_3.save!
 
 cocktail_4 = Cocktail.new(name: "Pina Colada")
-cocktail_4.save!
 cocktail_4.photo_url = "http://res.cloudinary.com/dpfv7sbu4/image/upload/v1487341784/#{urls[3]}"
+cocktail_4.save!
 
 cocktail_5 = Cocktail.new(name: "Titanic Gin")
-cocktail_5.save!
 cocktail_5.photo_url = "http://res.cloudinary.com/dpfv7sbu4/image/upload/v1487341784/#{urls[4]}"
+cocktail_5.save!
 
